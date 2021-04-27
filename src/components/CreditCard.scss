@@ -1,0 +1,28 @@
+.container_CC {
+    margin-top: 6.25rem;    
+
+    .title_CC {
+        font-size: 3.125rem;    
+        font-weight: 300;
+        color: #7b34b1;
+        padding: 2.5rem 0;
+    }
+    
+    .icon_CC {
+        margin-bottom: 2rem;
+    }
+
+    .icon_CC svg {
+        display: inline;        
+        position: relative;
+        bottom: .4rem;
+    }
+    
+    .icon_CC p {
+        display: inline-flex;
+        margin-left: 1rem;
+        font-size: 1.175rem;        
+    }
+}
+
+

@@ -1,0 +1,59 @@
+.container_Bg {
+    background-color: #443a50;
+    color: #fff;    
+
+    .title_Faq {
+        text-align: center;
+        font-size: 3.73rem;
+        font-weight: 300;
+        padding: 4rem 0;
+    }
+
+    .iconsCopy_Faq {
+        margin-top: 7.5rem;
+    }
+
+    .iconsCopy_Faq svg {
+        font-size: 2.8125rem;
+        margin-bottom: 2rem;
+    }
+
+    .iconsCopy_Faq p {
+        font-size: 1.25rem;
+        margin-left: 1.5rem;
+        position: relative;
+        top: .3rem;
+        font-weight: 300;
+        color: #a8a8a8;
+        transition: all .2s ease-in-out;
+    }
+
+    .iconsCopy_Faq p:hover {
+        color: #fff;
+    }
+
+    .copy_Faq {
+        font-size: 1rem;
+        font-weight: 400;
+        background-color: #3b2e4a;   
+        margin-top: 1rem;     
+        border-radius: 1rem;
+        margin-bottom: 5rem;
+    }
+        
+    .copy_Faq p {
+        position: relative;
+        top: .5rem;
+        width: 100%;
+        padding: 1rem 2rem;        
+        transition: all .2s ease-in-out;
+    }
+
+    .copy_Faq p:hover {        
+        transform: scale(1.02);
+    }
+
+    .row:hover {
+        background-color: #443a50;        
+    }
+}

@@ -1,0 +1,19 @@
+.jumbotron_Hero {
+    width: 100%;
+    height: 43.75rem;
+    position: relative;
+    background-image: url(../assets/banner.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    
+    .container_Hero {
+        height: 43.75rem;
+        p {
+            font-size: 1.56rem;
+        }
+        button {
+            font-size: 1.25rem;
+        }
+    }
+}

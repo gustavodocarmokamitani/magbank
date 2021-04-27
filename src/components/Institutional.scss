@@ -1,0 +1,30 @@
+.Institutional {
+    width: 100vw;
+    background-image: url(../assets/bgInstitutional.png);
+    background-size: cover;
+    padding: 7.5rem 0;    
+
+    .copy_Institutional {
+        color: #fff;
+        padding: 0;
+
+        .title_Institutional {
+            font-size: 3.5rem;
+            font-weight: 300;
+        }
+    
+        .text_Institutional {
+            font-size: 1.125rem;
+            line-height: 1.625rem;
+        }
+
+        .icon_Institutional {
+            font-size: 1.5rem;
+        }
+    
+        .iconText_Institutional {
+            display: inline-block;
+            position: relative;            
+        }
+    }
+}
