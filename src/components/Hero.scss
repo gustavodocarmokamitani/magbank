@@ -6,7 +6,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
-    
+
     .container_Hero {
         height: 43.75rem;
         p {
@@ -14,6 +14,36 @@
         }
         button {
             font-size: 1.25rem;
+        }
+    }
+}
+
+@media screen and (max-width: 577px) {
+    .jumbotron_Hero {
+        height: 35.625rem;
+
+        .container_Hero {
+            justify-content: center;
+            height: 35.625rem;
+            .copy_Hero {
+                position: relative;
+                top: -2rem;                
+
+                .magicpay {
+                    width: 100%;                    
+                }
+
+                p {
+                    font-size: 1.25rem;
+                    padding: 2rem 0;
+                }
+
+                button {
+                    font-size: 1rem;
+                }
+            }
+
+            
         }
     }
 }

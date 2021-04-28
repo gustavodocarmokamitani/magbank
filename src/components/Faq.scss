@@ -1,6 +1,6 @@
 .container_Bg {
     background-color: #443a50;
-    color: #fff;    
+    color: #fff;
 
     .title_Faq {
         text-align: center;
@@ -14,18 +14,20 @@
     }
 
     .iconsCopy_Faq svg {
+        display: inline-block;
         font-size: 2.8125rem;
         margin-bottom: 2rem;
     }
 
     .iconsCopy_Faq p {
+        display: inline-block;
         font-size: 1.25rem;
         margin-left: 1.5rem;
         position: relative;
-        top: .3rem;
+        bottom: 0.9rem;
         font-weight: 300;
         color: #a8a8a8;
-        transition: all .2s ease-in-out;
+        transition: all 0.2s ease-in-out;
     }
 
     .iconsCopy_Faq p:hover {
@@ -35,25 +37,43 @@
     .copy_Faq {
         font-size: 1rem;
         font-weight: 400;
-        background-color: #3b2e4a;   
-        margin-top: 1rem;     
+        background-color: #3b2e4a;
+        margin-top: 1rem;
         border-radius: 1rem;
         margin-bottom: 5rem;
     }
-        
+
     .copy_Faq p {
         position: relative;
-        top: .5rem;
+        top: 0.5rem;
         width: 100%;
-        padding: 1rem 2rem;        
-        transition: all .2s ease-in-out;
+        padding: 1rem 2rem;
+        transition: all 0.2s ease-in-out;
     }
 
-    .copy_Faq p:hover {        
+    .copy_Faq p:hover {
         transform: scale(1.02);
     }
 
     .row:hover {
-        background-color: #443a50;        
+        background-color: #443a50;
+    }
+}
+
+@media screen and (max-width: 577px) {
+    .container_Bg {
+        .title_Faq {
+            padding: 4rem 0;
+            font-size: 2.25rem;
+        }
+
+        .iconsCopy_Faq {
+            margin: 0rem 1rem;
+        }
+
+        .copy_Faq p {
+            font-size: 0.9rem;
+            padding: 1rem;
+        }
     }
 }

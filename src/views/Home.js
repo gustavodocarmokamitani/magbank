@@ -22,6 +22,4 @@ const Home = ({ handleClick }) => (
     </>
 )
 
-
-console.log(posts)
 export default Home;

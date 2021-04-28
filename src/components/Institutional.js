@@ -9,25 +9,43 @@ const Institutional = () => (
         <Container className="container_Institutional">
             <Row>
                 <Col></Col>
-                <Col xs={12} lg={7} className="copy_Institutional">
-                    <h2 className="title_Institutional">Já nascemos digital</h2>
-
-                    <p className="text_Institutional">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt arcu vel arcu fermentum, eget accumsan dolor dignissim. Nam eget quam semper, varius ligula sed, auctor augue. Maecenas et porta magna. Nulla mattis tortor vitae metus vestibulum scelerisque. Ut mollis a nisl vel suscipit. Curabitur scelerisque placerat ultrices. Proin purus ante, congue vel arcu ac, porta condimentum mauris. Maecenas massa orci, fringilla eget fermentum nec, dignissim nec diam.</p>
-
+                <Col xs={12} lg={7} className="copy_Institutional ">
+                    <Row>
+                        <Col>
+                            <p className="title_Institutional">Já nascemos digital</p>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col>
+                            <p className="text_Institutional">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt arcu vel arcu fermentum, eget accumsan dolor dignissim. Nam eget quam semper, varius ligula sed, auctor augue. Maecenas et porta magna. Nulla mattis tortor vitae metus vestibulum scelerisque. Ut mollis a nisl vel suscipit. Curabitur scelerisque placerat ultrices. Proin purus ante, congue vel arcu ac, porta condimentum mauris. Maecenas massa orci, fringilla eget fermentum nec, dignissim nec diam.</p>
+                        </Col>
+                    </Row>
                     <Row className="mt-5">
-                        <FaMobileAlt className="icon_Institutional ml-4" /><p className="iconText_Institutional ml-3">Sem fila e sem burocracia</p>
+                        <Col>
+                            <FaMobileAlt className="icon_Institutional ml-4" /><p className="iconText_Institutional ml-3">Sem fila e sem burocracia</p>
+                        </Col>
                     </Row>
                     <Row>
-                        <FaEye className="icon_Institutional ml-4" /><p className="iconText_Institutional ml-3">Simples e prático</p>
+                        <Col>
+                            <FaEye className="icon_Institutional ml-4" /><p className="iconText_Institutional ml-3">Simples e prático</p>
+                        </Col>
                     </Row>
                     <Row>
-                        <FaGlobe className="icon_Institutional ml-4" /><p className="iconText_Institutional ml-3">Abertura de conta 100% online</p>
+                        <Col>
+                            <FaGlobe className="icon_Institutional ml-4" /><p className="iconText_Institutional ml-3">Abertura de conta 100% online</p>
+                        </Col>
                     </Row>
                     <Row>
-                        <FaShieldAlt className="icon_Institutional ml-4" /><p className="iconText_Institutional ml-3">Transações maios seguras</p>
+                        <Col>
+                            <FaShieldAlt className="icon_Institutional ml-4" /><p className="iconText_Institutional ml-3">Transações maios seguras</p>
+                        </Col>
                     </Row>
 
-                    <Button className="mt-5" variant="outline-light">Abra sua conta</Button>
+                    <Row>
+                        <Col className="d-flex justify-content-center" xs={12}>
+                            <Button className="mt-5" variant="outline-light">Abra sua conta</Button>
+                        </Col>
+                    </Row>
                 </Col>
             </Row>
         </Container>

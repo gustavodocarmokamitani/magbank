@@ -2,7 +2,7 @@
     width: 100vw;
     background-image: url(../assets/bgInstitutional.png);
     background-size: cover;
-    padding: 7.5rem 0;    
+    padding: 7.5rem 0;
 
     .copy_Institutional {
         color: #fff;
@@ -12,7 +12,7 @@
             font-size: 3.5rem;
             font-weight: 300;
         }
-    
+
         .text_Institutional {
             font-size: 1.125rem;
             line-height: 1.625rem;
@@ -21,10 +21,29 @@
         .icon_Institutional {
             font-size: 1.5rem;
         }
-    
+
         .iconText_Institutional {
             display: inline-block;
-            position: relative;            
+            position: relative;
+        }
+    }
+}
+
+@media screen and (max-width: 577px) {
+    .Institutional {
+        padding: 3rem 1.5rem;
+
+        .copy_Institutional {
+
+            .title_Institutional {
+                font-size: 2.5rem;
+                font-weight: 300;
+            }
+
+            .text_Institutional {
+                font-size: 1rem;
+                padding: 0 1rem;
+            }
         }
     }
 }

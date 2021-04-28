@@ -13,7 +13,7 @@ const Footer = () => (
             <Col xs={12} lg={5}>
                 <a href="home"> <img src={MagBankFooter} className="logo_Footer"/> </a>
             </Col>
-            <Col xs={12} lg={7} className="social_Footer">
+            <Col xs={6} lg={7} className="social_Footer">
                 <a href="#appGoogle"> <img src={GoogleApp} /> </a>
                 <a href="#appApple"> <img src={AppleApp} /> </a>
 

@@ -18,28 +18,28 @@ const CreditCard = () => (
                     <h2 className="title_CC">Cartão de crédito</h2>
                 </Row>
                 <Row>
-                    <Col className="icon_CC">
+                    <Col xs={12} className="icon_CC">
                         <FaCcMastercard size={28} color='#f05656' textClassName='h5 text-muted' />
                         <p className="textCopy_CC">Crédito Pessoal</p>
                     </Col>
 
-                    <Col className="icon_CC">
+                    <Col xs={12} className="icon_CC">
                         <FaShoppingCart size={28} color='#f05656' textClassName='h5 text-muted' />
                         <p className="textCopy_CC">Pagamentos Online</p>
                     </Col>
                 </Row>
                 <Row>
-                    <Col className="icon_CC"> 
+                    <Col xs={12} className="icon_CC"> 
                         <FaMobileAlt size={28} color='#f05656' textClassName='h5 text-muted' />
-                        <p className="textCopy_CC">App</p>
+                        <p className="textCopy_CC">APP</p>
                     </Col>
-                    <Col className="icon_CC">
+                    <Col xs={12} className="icon_CC">
                         <FaWallet size={28} color='#f05656' textClassName='h5 text-muted' />
                         <p className="textCopy_CC">Carteira Digital</p>
                     </Col>
                 </Row>
             </Col>
-            <Col xs={12} lg={5}>
+            <Col className="cardImage" xs={12} lg={5}>
                 <Image src={CreditCardImg} alt="Magbank Credit Card Example" fluid />
             </Col>
         </Row>
