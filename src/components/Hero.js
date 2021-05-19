@@ -3,7 +3,7 @@ import { Container, Row, Col, Button, Jumbotron } from "react-bootstrap";
 import magicpay from "../assets/magicpay.png";
 import "./Hero.scss";
 
-const Hero = () => (
+const Hero = ({ onClick }) => (
     <Jumbotron className='jumbotron_Hero text-center text-light hero'>
         <Container className="container_Hero d-flex align-items-center">
             <Row className="copy_Hero" >
@@ -13,7 +13,7 @@ const Hero = () => (
                 <Col className='text-lg-left my-lg-5'>
                     <p>Pague suas contas pelo nosso APP</p>
 
-                    <Button variant="outline-light">Abra sua conta</Button>
+                    <Button variant="outline-light" onClick={onClick}>Abra sua conta</Button>
                 </Col>
             </Row>
         </Container>

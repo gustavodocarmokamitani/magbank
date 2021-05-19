@@ -1,0 +1,25 @@
+.containerLogin {    
+    background: rgb(63, 94, 251);
+    background: linear-gradient(135deg, rgb(140, 23, 250) 0%, rgba(243, 0, 49, 0.664) 100%);
+    height: 100vh;
+   
+    .container {
+        margin-top: -100px;
+        
+        img {
+            margin-bottom: 100px;
+        }
+        
+        label {
+            color: #fff;
+            font-weight: 600;
+            font-size: 18px;
+            margin: 15px 0;        
+        }
+        
+        input {
+            width: 300px;
+            margin: 0 auto;
+        }
+    }
+}

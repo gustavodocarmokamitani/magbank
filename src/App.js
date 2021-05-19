@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import Home from "./views/Home";
+import Login from "./views/Login";
+import AccountModal from "./components/AccountModal";
 import "./App.scss";
 
 import {
@@ -10,42 +13,40 @@ import {
 } from "react-router-dom";
 
 function App() {
+
+  const [ showModal, setShowModal ] = useState(false);
+
+
   return (
     <Router>
-      <div className="App">
-        <Navbar />
 
-        <Switch>
-          <Route path="/">
-            <Home/>
-          </Route>
-        </Switch>
+      <Navbar handleCreateAcc={() => setShowModal(true)}/>
 
-        <Switch>
-          <Route path="/Login">
-            {/* <Login/> */}
-          </Route>
-        </Switch>
+      <Switch>
 
-        <Switch>
-          <Route path="/Card">
-            {/* <Card/> */}
-          </Route>
-        </Switch>
+        <Route path="/" exact>
+          <Home handleCreateAcc={() => setShowModal(true)}/>
+        </Route>
 
-        <Switch>
-          <Route path="/Wwa">
-            {/* <Wwa/> */}
-          </Route>
-        </Switch>
+        <Route path="/login">
+          <Login />
+        </Route>
 
-        <Switch>
-          <Route path="/Faq">
-            {/* <Faq/> */}
-          </Route>
-        </Switch>
-        
-      </div>
+        <Route path="/Card">
+          {/* <Card/> */}
+        </Route>
+
+        <Route path="/Wwa">
+          {/* <Wwa/> */}
+        </Route>
+
+        <Route path="/Faq">
+          {/* <Faq/> */}
+        </Route>
+      </Switch>
+
+      <Footer />
+      <AccountModal show={showModal} handleClose={() => setShowModal(false)} />
     </Router>
   )
 }

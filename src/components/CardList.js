@@ -7,7 +7,7 @@ const CardList = ({ posts }) => (
     <Row>
       {posts &&
         posts.map(({ id, image, title, excerpt, action }) => (
-          <Col xs={12} lg={4} key={id}>
+          <Col xs={6} lg={4} key={id}>
             <Card className='mx-auto my-5'>
               <Card.Img variant='top' src={image} />
               <Card.Body>

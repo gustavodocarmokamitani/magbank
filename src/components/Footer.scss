@@ -1,44 +1,7 @@
-.container_Footer {
-    height: 10rem;
+.footer {
+    border-bottom: 2px solid red;
 
-    .copy_Footer {
-        margin-top: 4rem;
-    }
-
-    .logo_Footer {
-        width: 12rem;
-        margin-top: 1rem;
-    }
-
-    .social_Footer img {
-        width: 10rem;
-        margin-right: 2rem;
-        margin-top: 1rem;
-    }
-
-    .social_Footer svg {
-        font-size: 1.5rem;
-        margin-right: 1rem;
-    }
-
-    .social_Footer a {
-        color: black;
-    }
-}
-
-@media screen and (max-width: 577px) {
-    .container_Footer {
-        height: 15rem;
-        .social_Footer {
-            margin: 0 auto;
-            
-            img {
-                padding: 1rem 0;
-            }
-
-            svg {
-                margin: 1rem .6rem 2rem;
-            }
-        }
+    img, svg {
+        margin: 1rem 0 0 1rem;        
     }
 }

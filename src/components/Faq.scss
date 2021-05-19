@@ -31,7 +31,7 @@
     }
 
     .iconsCopy_Faq p:hover {
-        color: #fff;
+        color: #fff;        
     }
 
     .copy_Faq {
@@ -48,11 +48,11 @@
         top: 0.5rem;
         width: 100%;
         padding: 1rem 2rem;
-        transition: all 0.2s ease-in-out;
+        transition: all .2s ease-in-out;
     }
 
     .copy_Faq p:hover {
-        transform: scale(1.02);
+        transform: scale(1.05);        
     }
 
     .row:hover {

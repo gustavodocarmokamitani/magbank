@@ -1,28 +1,33 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import MagBankFooter from "../assets/MagBankFooter.png"
-import GoogleApp from "../assets/GoogleApp.png"
-import AppleApp from "../assets/AppleApp.png"
+import { Container, Row, Col, Image } from "react-bootstrap";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookSquare, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
 
-import { FaTwitter, FaFacebook, FaYoutube } from "react-icons/fa";
+import logo from "../assets/MagBankFooter.png";
+import appleStore from "../assets/AppleApp.png";
+import googlePlay from "../assets/GoogleApp.png";
+
 import "./Footer.scss";
-
 const Footer = () => (
-    <Container className="container_Footer">
-        <Row className="copy_Footer text-center">
-            <Col xs={12} lg={5}>
-                <a href="home"> <img src={MagBankFooter} className="logo_Footer"/> </a>
-            </Col>
-            <Col xs={6} lg={7} className="social_Footer">
-                <a href="#appGoogle"> <img src={GoogleApp} /> </a>
-                <a href="#appApple"> <img src={AppleApp} /> </a>
-
-                <a href="#Twitter"> <FaTwitter /> </a>
-                <a href="#Facebook"> <FaFacebook /> </a>
-                <a href="#Youtube"> <FaYoutube /> </a>
-            </Col>
-        </Row>
-    </Container>
+    <footer className="footer">
+        <Container>
+            <Row className="text-center py-5">
+                <Col xs={12} lg={6} className="text-lg-left">
+                    <Image src={logo} />
+                </Col>
+                <Col xs={12} lg={4}>
+                    <Image src={appleStore} />
+                    <Image src={googlePlay} />
+                </Col>
+                <Col xs={12} lg={2} className="d-flex align-items-center justify-content-center">
+                    <a href="#" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFacebookSquare} color="#7c7c7c" size="2x"/></a>
+                    <a href="#" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faTwitter} color="#7c7c7c"size="2x"/></a>
+                    <a href="#" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faYoutube} color="#7c7c7c"size="2x"/></a>
+                    
+                </Col>
+            </Row>
+        </Container>
+    </footer>
 );
 
 export default Footer;
